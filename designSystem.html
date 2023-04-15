@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Design System</title>
+
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" /> -->
+	<link rel="stylesheet" href="cudnahi.css">
+
+	<style>
+		:root {
+			--tricolour-angle: 110deg;
+			--colour1: #FF0000;
+			--colour2: #00FF00;
+			--colour3: #0000FF;
+		}
+		.bg-tricolour {
+			background: 
+				linear-gradient(var(--tricolour-angle), var(--colour1) 35.08%, rgba(0, 0, 0, 0) 35.58%), 
+				linear-gradient(var(--tricolour-angle), var(--colour2) 64.42%, var(--colour3) 64.92%);
+		}
+	</style>
+</head>
+<body class="bg-grey-very-light">
+	<div class="content">
+		<h1 class="mt-0">Cudnahi Design System</h1>
+		<h2 id="contents" class="mt-0">
+			Contents
+			<a href="#contents" aria-hidden="true" tabindex="-1"><svg class="icon"><use href="assets/feather-sprite.svg#link"/></svg></a>
+		</h2>
+		<h3 class="mt-0">Headings</h3>
+		<div class="grid grid-cols-6 w-full">
+			<div class="flex flex-col">
+				<div class="flex centre-content aspect-ratio-1 card shadow-md">
+					<h1 class="my-auto">Aa</h1>
+				</div>
+				<span class="w-full text-centre text-base mt-4">Heading 1</span>
+			</div>
+			<div class="flex flex-col">
+				<div class="flex centre-content aspect-ratio-1 card shadow-md">
+					<h2 class="my-auto">Aa</h2>
+				</div>
+				<span class="w-full text-centre text-base mt-4">Heading 2</span>
+			</div>
+			<div class="flex flex-col">
+				<div class="flex centre-content aspect-ratio-1 card shadow-md">
+					<h3 class="my-auto">Aa</h3>
+				</div>
+				<span class="w-full text-centre text-base mt-4">Heading 3</span>
+			</div>
+			<div class="flex flex-col">
+				<div class="flex centre-content aspect-ratio-1 card shadow-md">
+					<h4 class="my-auto">Aa</h4>
+				</div>
+				<span class="w-full text-centre text-base mt-4">Heading 4</span>
+			</div>
+			<div class="flex flex-col">
+				<div class="flex centre-content aspect-ratio-1 card shadow-md">
+					<h5 class="my-auto">Aa</h5>
+				</div>
+				<span class="w-full text-centre text-base mt-4">Heading 5</span>
+			</div>
+			<div class="flex flex-col">
+				<div class="flex centre-content aspect-ratio-1 card shadow-md">
+					<h6 class="my-auto">Aa</h6>
+				</div>
+				<span class="w-full text-centre text-base mt-4">Heading 6</span>
+			</div>
+		</div>
+
+		<h3>Articles</h3>
+		<p>Reasonable defaults for <b>bold</b>, <i>italic</i>, <u>underline</u>, <mark>highlighting</mark>, <small>small</small>, and <a href="#">links</a></p>
+		<p>Inline code like <code>console.log('Hello, world!');</code>, and keyboard commands like <kbd>ALT+F4</kbd></p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque lorem non lectus tempus luctus. Aenean lobortis velit ut libero posuere, ac aliquet nulla egestas. Vivamus nulla orci, vestibulum a iaculis ac, ultricies vel augue. Quisque id suscipit augue, ac pellentesque odio. Duis tincidunt aliquet posuere. Sed ac feugiat arcu. Sed et lacus sit amet arcu lobortis congue. Ut ac ex sed odio ultrices sodales.</p>
+		<p>Aenean dapibus justo et ultrices pulvinar. Fusce faucibus consectetur mauris id consectetur. Integer ornare, libero id imperdiet accumsan, purus ipsum bibendum erat, nec accumsan tellus dui et dolor. Nunc condimentum orci ut malesuada vehicula. Cras porttitor est aliquam velit ultricies, sed tincidunt lectus dictum. Duis dignissim, ipsum non pharetra auctor, ipsum augue faucibus urna, sit amet rhoncus ante nisl in nisl. Integer efficitur odio non metus congue placerat. Nulla facilisi.</p>
+
+		<h3>Tables</h3>
+		<div class="card shadow-md mb-gap">
+			<table>
+				<thead>
+					<tr>
+						<th>Company</th>
+						<th>Contact</th>
+						<th>Country</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Alfreds Futterkiste</td>
+						<td>Maria Anders</td>
+						<td>Germany</td>
+					</tr>
+					<tr>
+						<td>Centro comercial Moctezuma</td>
+						<td>Francisco Chang</td>
+						<td>Mexico</td>
+					</tr>
+					<tr>
+						<td>Ernst Handel</td>
+						<td>Roland Mendel</td>
+						<td>Austria</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="card shadow-md table-tight">
+			<table>
+				<thead>
+					<tr>
+						<th>Company</th>
+						<th>Contact</th>
+						<th>Country</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Alfreds Futterkiste</td>
+						<td>Maria Anders</td>
+						<td>Germany</td>
+					</tr>
+					<tr>
+						<td>Centro comercial Moctezuma</td>
+						<td>Francisco Chang</td>
+						<td>Mexico</td>
+					</tr>
+					<tr>
+						<td>Ernst Handel</td>
+						<td>Roland Mendel</td>
+						<td>Austria</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<h3>Colours</h3>
+		<div class="grid grid-cols-5 w-full">
+			<div class="flex flex-col">
+				<div class="flex centre-content aspect-ratio-1 rounded-full border-fine bg-grey-very-light"></div>
+				<span class="w-full text-centre text-base mt-4 mb-16">Grey Very Light</span>
+			</div>
+			<div class="flex flex-col">
+				<div class="flex centre-content aspect-ratio-1 rounded-full border-fine bg-grey-light"></div>
+				<span class="w-full text-centre text-base mt-4 mb-16">Grey Light</span>
+			</div>
+			<div class="flex flex-col">
+				<div class="flex centre-content aspect-ratio-1 rounded-full border-fine bg-grey-normal"></div>
+				<span class="w-full text-centre text-base mt-4 mb-16">Grey Normal</span>
+			</div>
+			<div class="flex flex-col">
+				<div class="flex centre-content aspect-ratio-1 rounded-full border-fine bg-grey-dark"></div>
+				<span class="w-full text-centre text-base mt-4 mb-16">Grey Dark</span>
+			</div>
+			<div class="flex flex-col">
+				<div class="flex centre-content aspect-ratio-1 rounded-full border-fine bg-grey-very-dark"></div>
+				<span class="w-full text-centre text-base mt-4 mb-16">Grey Very Dark</span>
+			</div>
+		</div>
+		<div class="grid grid-cols-5 w-full">
+			<div class="flex flex-col">
+				<!-- <div class="flex centre-content aspect-ratio-1 rounded-full border-fine bg-primary"></div> -->
+				<div 
+					class="flex centre-content aspect-ratio-1 rounded-full border-fine border-grey-normal bg-tricolour"
+					style="--colour1: var(--primary-dark); --colour2: var(--primary-normal); --colour3: var(--primary-light);">
+				</div>
+				<span class="w-full text-centre text-base mt-4 mb-16">Primary</span>
+			</div>
+			<div class="flex flex-col">
+				<div 
+					class="flex centre-content aspect-ratio-1 rounded-full border-fine border-grey-normal bg-tricolour"
+					style="--colour1: var(--success-dark); --colour2: var(--success-normal); --colour3: var(--success-light);">
+				</div>
+				<span class="w-full text-centre text-base mt-4 mb-16">Success</span>
+			</div>
+			<div class="flex flex-col">
+				<div 
+					class="flex centre-content aspect-ratio-1 rounded-full border-fine border-grey-normal bg-tricolour"
+					style="--colour1: var(--error-dark); --colour2: var(--error-normal); --colour3: var(--error-light);">
+				</div>
+				<span class="w-full text-centre text-base mt-4 mb-16">Error</span>
+			</div>
+			<div class="flex flex-col">
+				<div 
+					class="flex centre-content aspect-ratio-1 rounded-full border-fine border-grey-normal bg-tricolour"
+					style="--colour1: var(--warning-dark); --colour2: var(--warning-normal); --colour3: var(--warning-light);">
+				</div>
+				<span class="w-full text-centre text-base mt-4 mb-16">Warning</span>
+			</div>
+			<div class="flex flex-col">
+				<div 
+					class="flex centre-content aspect-ratio-1 rounded-full border-fine border-grey-normal bg-tricolour"
+					style="--colour1: var(--info-dark); --colour2: var(--info-normal); --colour3: var(--info-light);">
+				</div>
+				<span class="w-full text-centre text-base mt-4 mb-16">Info</span>
+			</div>
+		</div>
+
+		<h2 id="input">
+			Input
+			<a href="#input" aria-hidden="true" tabindex="-1"><svg class="icon"><use href="assets/feather-sprite.svg#link"/></svg></a>
+		</h2>
+		<h3>Form Elements</h3>
+		<!--
+			TODO Make sure all input types are tested: 
+			button, checkbox, color, date, datetime-local, email, file, hidden, 
+			image, month, number, password, radio, range, reset, search, submit, 
+			tel, text, time, url, week
+		-->
+		<form action="">
+			<div class="grid grid-cols-2">
+				<div class="flex flex-col mb-8">
+					<label for="email">Email Address</label>
+					<input type="email" id="email" name="email" />
+				</div>
+				
+				<div class="flex flex-col mb-8">
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" />
+				</div>
+			</div>
+
+			<div class="flex flex-col mb-8">
+				<label for="address1">Address Line 1</label>
+				<input type="text" id="address1" name="address1" />
+			</div>
+
+			<div class="flex flex-col mb-8">
+				<label for="address2">Address Line 2</label>
+				<input type="text" id="address2" name="address2" />
+			</div>
+
+			<div class="grid gap" style="grid-template-columns: minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1fr)">
+				<div class="flex flex-col mb-16">
+					<label for="city">City</label>
+					<input type="text" id="city" name="city" />
+				</div>
+
+				<div class="flex flex-col mb-16">
+					<label for="province">Province</label>
+					<input type="text" id="province" name="province" value="Ontario" disabled />
+				</div>
+				
+				<div class="flex flex-col mb-16">
+					<label for="postalCode">Postal Code</label>
+					<input 
+						type="text" id="postalCode" name="postalCode"
+						pattern="^\w\d\w ?\d\w\d$" required title="Must be a Canadian postal code" />
+				</div>
+			</div>
+
+			<div class="flex flex-row justify-between">
+				<div>
+					<input type="checkbox" id="wantRegularUpdates" name="wantRegularUpdates" value="wantRegularUpdates" />
+					<label for="wantRegularUpdates">Send me regular updates</label>
+				</div>
+
+				<input type="submit" value="Submit" />
+			</div>
+		</form>
+
+		<h3>Selection</h3>
+		<div class="grid grid-cols-3">
+			<div class="grid grid-rows-auto gap-0">
+				<div>
+					<input type="checkbox" name="c1" id="c1">
+					<label for="c1">Checkbox</label>
+				</div>
+				<div>
+					<input type="checkbox" name="c2" id="c2" checked>
+					<label for="c2">Checkbox</label>
+				</div>
+				<div>
+					<input type="checkbox" name="c1" id="c1" disabled>
+					<label for="c1">Checkbox</label>
+				</div>
+				<div>
+					<input type="checkbox" name="c2" id="c2" checked disabled>
+					<label for="c2">Checkbox</label>
+				</div>
+			</div>
+
+			<div class="grid grid-rows-auto gap-0">
+				<div>
+					<input type="radio" name="radio" id="r1" value="1">
+					<label for="r1">Radio</label>
+				</div>
+				<div>
+					<input type="radio" name="radio" id="r2" value="2" checked>
+					<label for="r2">Radio</label>
+				</div>
+				<div>
+					<input type="radio" name="radioDisabled" id="r1" value="1" disabled>
+					<label for="r1">Radio</label>
+				</div>
+				<div>
+					<input type="radio" name="radioDisabled" id="r2" value="2" checked disabled>
+					<label for="r2">Radio</label>
+				</div>
+			</div>
+
+			<div class="grid grid-rows-auto gap-0">
+				<div>
+					<input type="checkbox" class="switch" name="s1" id="s1">
+					<label for="s1">Switch</label>
+				</div>
+				<div>
+					<input type="checkbox" class="switch" name="s2" id="s2" checked>
+					<label for="s2">Switch</label>
+				</div>
+				<div>
+					<input type="checkbox" class="switch" name="s3" id="s3" disabled>
+					<label for="s3">Switch</label>
+				</div>
+				<div>
+					<input type="checkbox" class="switch" name="s4" id="s4" checked disabled>
+					<label for="s4">Switch</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="mt-gap grid grid-cols-2">
+			<div class="toggle-select">
+				<div>
+					<input type="radio" name="toggleSelect2" id="select1" value="1" checked>
+					<label for="select1">Option 1 of 2</label>
+				</div>
+				<div>
+					<input type="radio" name="toggleSelect2" id="select2" value="2">
+					<label for="select2">Option 2 of 2</label>
+				</div>
+			</div>
+			<div class="toggle-select">
+				<div>
+					<input type="radio" name="toggleSelect3" id="select1of3" value="1" checked>
+					<label for="select1of3">Option 1 of 3</label>
+				</div>
+				<div>
+					<input type="radio" name="toggleSelect3" id="select2of3" value="2">
+					<label for="select2of3">Option 2 of 3</label>
+				</div>
+				<div>
+					<input type="radio" name="toggleSelect3" id="select3of3" value="2">
+					<label for="select3of3">Option 2 of 3</label>
+				</div>
+			</div>
+		</div>
+
+		<h3>More Examples</h3>
+		<form action="" class="grid gap items-end" style="grid-template-columns: 1fr 200px 100px;">
+			<div class="flex flex-col">
+				<label for="query">Search Query</label>
+				<input type="text" id="query" name="query" />
+			</div>
+			<div class="flex flex-col">
+				<label for="environtmentSelect">Environment</label>
+				<div id="environtmentSelect" class="toggle-select">
+					<div>
+						<input type="radio" name="environment" id="environmentBeta" value="beta" checked>
+						<label for="environmentBeta">Beta</label>
+					</div>
+					<div>
+						<input type="radio" name="environment" id="environmentProd" value="prod">
+						<label for="environmentProd">Prod</label>
+					</div>
+				</div>
+			</div>
+			<input type="submit" value="Search" />
+		</form>
+
+		<h2 id="components">
+			Components
+			<a href="#components" aria-hidden="true" tabindex="-1"><svg class="icon"><use href="assets/feather-sprite.svg#link"/></svg></a>
+		</h2>
+		<h3 class="mt-0">Badges</h3>
+		<div class="flex flex-row w-full">
+			<span class="badge mr-gap">Default</span>
+			<span class="badge primary-alert mr-gap">Primary</span>
+			<span class="badge icon-span success-alert mr-gap">
+				<svg class="icon icon--xs"><use href="assets/feather-sprite.svg#check"/></svg>Success
+			</span>
+			<span class="badge icon-span error-alert mr-gap">
+				<svg class="icon icon--xs"><use href="assets/feather-sprite.svg#alert-octagon"/></svg>Error
+			</span>
+			<span class="badge icon-span warning-alert mr-gap">
+				<svg class="icon icon--xs"><use href="assets/feather-sprite.svg#alert-triangle"/></svg>Warning
+			</span>
+			<span class="badge icon-span info-alert mr-gap">
+				<svg class="icon icon--xs"><use href="assets/feather-sprite.svg#info"/></svg>Information
+			</span>
+		</div>
+
+		<h3>Cards</h3>
+		<div class="grid grid-cols-2">
+			<div class="card shadow-md">
+				<span>Nice and simple, with a box shadow.</span>
+			</div>
+			<div class="card bg-none">
+				<span>Outline card.</span>
+			</div>
+			<div class="card success-alert">
+				<span>Everything was a success!</span>
+			</div>
+			<div class="card error-alert">
+				<span>Oh no! Something went wrong.</span>
+			</div>
+			<div class="card warning-alert">
+				<span>Warning, you might want to look at this.</span>
+			</div>
+			<div class="card info-alert">
+				<span>Here's a little extra information.</span>
+			</div>
+		</div>
+
+		<h3>Popover</h3>
+		<div class="flex flex-row w-full">
+			<div class="popover__wrapper mr-gap">
+				<span class="popover__title badge icon-span info-alert">
+					<svg class="icon icon--xs"><use href="assets/feather-sprite.svg#help-circle"/></svg>Popover
+				</span>
+				<div class="popover__content" style="width: 256px;">
+					<p class="m-0">This is an example of some popover content on a badge</p>
+				</div>
+			</div>
+			<div class="popover__wrapper">
+				<span class="popover__title mr-gap"><svg class="icon icon--md"><use href="assets/feather-sprite.svg#help-circle"/></svg></span>
+				<div class="popover__content" style="width: 256px;">
+					<p class="m-0">This is an example of some popover content on an icon</p>
+				</div>
+			</div>
+			<div class="popover__wrapper">
+				<a class="popover__title">popover</a>
+				<div class="popover__content" style="width: 512px;">
+					<h3 class="mt-0">Very Long Content</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque lorem non lectus tempus luctus. Aenean lobortis velit ut libero posuere, ac aliquet nulla egestas. Vivamus nulla orci, vestibulum a iaculis ac, ultricies vel augue. Quisque id suscipit augue, ac pellentesque odio. Duis tincidunt aliquet posuere. Sed ac feugiat arcu. Sed et lacus sit amet arcu lobortis congue. Ut ac ex sed odio ultrices sodales.</p>
+					<p class="mb-0">Aenean dapibus justo et ultrices pulvinar. Fusce faucibus consectetur mauris id consectetur. Integer ornare, libero id imperdiet accumsan, purus ipsum bibendum erat, nec accumsan tellus dui et dolor. Nunc condimentum orci ut malesuada vehicula. Cras porttitor est aliquam velit ultricies, sed tincidunt lectus dictum. Duis dignissim, ipsum non pharetra auctor, ipsum augue faucibus urna, sit amet rhoncus ante nisl in nisl. Integer efficitur odio non metus congue placerat. Nulla facilisi.</p>
+				</div>
+			</div>
+		</div>
+
+		<h3>Icons</h3>
+		<div class="grid grid-cols-6">
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#check"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#alert-octagon"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#alert-triangle"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#info"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#cloud-off"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#cloud-lightning"/></svg>
+			</div>
+
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#inbox"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#link"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#external-link"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#copy"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#help-circle"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#code"/></svg>
+			</div>
+
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#database"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#hard-drive"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#users"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#slack"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#share-2"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#tool"/></svg>
+			</div>
+
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#key"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#calendar"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#clock"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#image"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#map-pin"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#map"/></svg>
+			</div>
+
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#phone"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#phone-off"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#tag"/></svg>
+			</div>
+			<div class="flex centre-content aspect-ratio-1 card shadow">
+				<svg class="icon icon--lg"><use href="assets/feather-sprite.svg#star"/></svg>
+			</div>
+		</div>
+
+		<h3>Blank Slates</h3>
+		<div class="grid grid-rows-auto">
+			<div class="flex centre-content card bg-none aspect-ratio-ultrawide">
+				<div class="flex flex-row">
+					<div class="mr-gap">
+						<svg class="icon icon--xl"><use href="assets/feather-sprite.svg#inbox"/></svg>
+					</div>
+					<div class="flex flex-col justify-centre leading-tight">
+						<p class="text-3xl m-0">No Results Found</p>
+						<p class="m-0">We were unable to find any results that match your query.</p>
+						<!-- TODO ghost button CTA? -->
+					</div>
+				</div>
+			</div>
+			<div class="flex centre-content card bg-none aspect-ratio-ultrawide">
+				<div class="flex flex-row">
+					<div class="mr-gap">
+						<svg class="icon icon--xl"><use href="assets/feather-sprite.svg#cloud-lightning"/></svg>
+					</div>
+					<div class="flex flex-col justify-centre leading-tight">
+						<p class="text-3xl m-0">Invalid Input</p>
+						<p class="m-0">You have entered an invalid query. Expected letters and numbers only.</p>
+						<!-- TODO ghost button CTA? -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="w-full mb-48"></div>
+	</div>
+</body>
+</html>
