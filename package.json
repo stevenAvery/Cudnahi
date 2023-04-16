@@ -1,0 +1,18 @@
+{
+  "name": "cudnahi",
+  "version": "0.1.0",
+  "description": "A design system with reasonable defaults, and simple components using only CSS.",
+  "main": "cudnahi.css",
+  "style": "cudnahi.css",
+  "keywords": [
+    "css",
+    "design-system"
+  ],
+  "files": [
+    "cudnahi.css"
+  ],
+  "author": "Steven Avery",
+  "license": "MIT",
+  "homepage": "https://github.com/stevenAvery/Cudnahi",
+  "repository": "https://github.com/stevenAvery/Cudnahi"
+}
