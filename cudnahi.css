@@ -16,7 +16,6 @@
 :root {
 	/* 1px, 2px,      4px,     6px,      8px,    12px,    16px, 24px,   32px, 48px, 64px, 96px, 128px */
 	/*      0.125rem, 0.25rem, 0.375rem, 0.5rem, 0.75rem, 1rem, 1.5rem, 2rem, 3rem, 4rem, 6rem, 8rem  */
-	/* https://v1.tailwindcss.com/docs/background-color */
 	--white:          #FFFFFF;
 	--grey-very-light:#EFF4F8; /* grey 175 (was grey 200) */
 	--grey-light:     #e2e8f0; /* grey 300 (new) */
@@ -251,7 +250,7 @@
 			background: var(--white);
 			/* transition: background 0.3s, border-color 0.3s, box-shadow 0.2s; */
 		}
-		input[type='checkbox']:after, input[type='radio']:after {
+		input[type='checkbox']::after, input[type='radio']::after {
 			display: flex;
 			justify-content: center;
 			content: "✔";
@@ -278,10 +277,10 @@
 		input[type='checkbox']:hover:not(:checked):not(:disabled), input[type='radio']:hover:not(:checked):not(:disabled) {
 			border-color: var(--border-hover-colour);
 		}
-		input[type='checkbox']:not(.switch):after, input[type='radio']:not(.switch):after {
+		input[type='checkbox']:not(.switch)::after, input[type='radio']:not(.switch)::after {
 			opacity: var(--o, 0);
 		}
-		input[type='checkbox']:not(.switch):after {
+		input[type='checkbox']:not(.switch)::after {
 			margin-top: 1px;
 		}
 		input[type='checkbox']:not(.switch):checked, input[type='radio']:not(.switch):checked {
@@ -300,7 +299,7 @@
 			width: var(--switch-width);
 			border-radius: var(--rounded-full);
 		}
-		input[type='checkbox'].switch:after {
+		input[type='checkbox'].switch::after {
 			display: block;
 			position: absolute;
 			content: '';
@@ -317,13 +316,13 @@
 			--ab: var(--white);
 			--x: var(--x-final);
 		}
-		input[type='checkbox'].switch:disabled:not(:checked):after {
+		input[type='checkbox'].switch:disabled:not(:checked)::after {
 			opacity: 0.6;
 		}
 		input[type='radio'] {
 			border-radius: var(--rounded-full);
 		}
-		input[type='radio']:after {
+		input[type='radio']::after {
 			width: calc(var(--selection-size) - 2px);
 			height: calc(var(--selection-size) - 2px);
 			border-radius: var(--rounded-full);
@@ -507,7 +506,7 @@
 	/* --- Popovers --- */
 	.popover__wrapper {
 		--arrow-size: 8px;
-		--arrow-left: 32px;
+		--arrow-left: 24px;
 		position: relative;
 	}
 	.popover__title {
@@ -523,28 +522,27 @@
 		opacity: 0;
 		visibility: hidden;
 		position: absolute;
-		left: calc(50% - var(--arrow-left)); /* So that the arrow points to the middle of the title*/
+		left: 0; /* calc(50% - var(--arrow-left)); /* So that the arrow points to the middle of the title*/
 		margin: 0;
 		margin-top: var(--arrow-size);
 	}
 	.popover__content::before, .popover__content::after {
 		content: "";
 		display: inline-block;
-		left: var(--arrow-left);
+		left: var(--arrow-left) !important;
 		position: absolute;
 	}
 	.popover__content::before {
 		margin-left: 0;
 		border: var(--arrow-size) solid transparent;
 		border-bottom: var(--arrow-size) solid var(--border-colour);
-		margin-left: calc(-var(--default-border-width) - var(--arrow-size));
+		/* margin-left: calc(-var(--default-border-width) - var(--arrow-size)); */
 		top: calc((0px - var(--arrow-size)) * 2);
 	}
 	.popover__content::after {
-
+		margin-left: var(--default-border-width); /* calc(0px - var(--arrow-size)); */
 		border: calc(var(--arrow-size) - var(--default-border-width)) solid #0000;
 		border-bottom: calc(var(--arrow-size) - var(--default-border-width)) solid var(--white);
-		margin-left: calc(0px - var(--arrow-size));
 		top: calc((0px - (var(--arrow-size) - var(--default-border-width))) * 2);
 	}
 	.popover__wrapper:hover .popover__content {
@@ -588,6 +586,12 @@
 	.text-error       { color: var(--error-dark);   }
 	.text-warning     { color: var(--warning-dark); }
 	.text-info        { color: var(--info-dark);    }
+
+	.primary-icon  { fill: var(--primary-light); stroke: var(--primary-dark); }
+	.success-icon  { fill: var(--success-light); stroke: var(--success-dark); }
+	.error-icon    { fill: var(--error-light);   stroke: var(--error-dark);   }
+	.warning-icon  { fill: var(--warning-light); stroke: var(--warning-dark); }
+	.info-icon     { fill: var(--info-light);    stroke: var(--info-dark);    }
 
 	.primary-alert { background-color: var(--primary-light); color: var(--primary-dark); border: var(--default-border-width) solid var(--primary-normal); }
 	.success-alert { background-color: var(--success-light); color: var(--success-dark); border: var(--default-border-width) solid var(--success-normal); }
