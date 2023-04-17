@@ -1,6 +1,6 @@
 {
   "name": "cudnahi",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A design system with reasonable defaults, and simple components using only CSS.",
   "main": "cudnahi.css",
   "style": "cudnahi.css",
