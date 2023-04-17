@@ -4,6 +4,9 @@
   "description": "A design system with reasonable defaults, and simple components using only CSS.",
   "main": "cudnahi.css",
   "style": "cudnahi.css",
+  "scripts": {
+    "build": "postcss src/cudnahi.css --output dist/cudnahi.min.css"
+  },
   "keywords": [
     "css",
     "design-system"
@@ -13,6 +16,16 @@
   ],
   "author": "Steven Avery",
   "license": "MIT",
-  "homepage": "https://github.com/stevenAvery/Cudnahi",
-  "repository": "https://github.com/stevenAvery/Cudnahi"
+  "homepage": "https://github.com/stevenAvery/Cudnahi#readme",
+  "repository": "https://github.com/stevenAvery/Cudnahi",
+  "devDependencies": {
+    "cssnano": "^6.0.0",
+    "postcss": "^8.4.22",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-preset-env": "^8.3.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
