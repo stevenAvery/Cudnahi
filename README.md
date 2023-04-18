@@ -5,6 +5,12 @@ A design system with reasonable defaults, and simple components using only CSS.
 [![licence](https://img.shields.io/github/license/stevenavery/cudnahi)](LICENSE.md)
 [![changelog](https://img.shields.io/badge/changelog-md-blue.svg)](CHANGELOG.md)
 
+## Usage
+To include with a CDN:
+``` html
+<link rel="stylesheet" href="https://www.unpkg.com/cudnahi@0.2.2/dist/cudnahi.min.css">
+```
+
 ## What's Included?
 ### Reasonable defaults, including:
 - Headings 

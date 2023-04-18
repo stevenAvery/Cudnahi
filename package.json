@@ -1,9 +1,9 @@
 {
   "name": "cudnahi",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A design system with reasonable defaults, and simple components using only CSS.",
-  "main": "cudnahi.css",
-  "style": "cudnahi.css",
+  "main": "dist/cudnahi.min.css",
+  "style": "dist/cudnahi.min.css",
   "scripts": {
     "build": "postcss src/cudnahi.css --output dist/cudnahi.min.css"
   },
