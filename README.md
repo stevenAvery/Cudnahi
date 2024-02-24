@@ -47,3 +47,6 @@ To include with a CDN:
 - Aspect ratios
 - Border radius
 - Shadows
+
+## Example
+![Design System Sample](./docs/designSystemSample.png)
